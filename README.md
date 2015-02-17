@@ -1,7 +1,10 @@
 # ast-redeclare [![Build Status](https://travis-ci.org/dfcreative/ast-redeclare.svg?branch=master)](https://travis-ci.org/dfcreative/ast-redeclare)
 
-Fold variable declarations within scopes, so that each variable has only one declaration per scope.
+Hoist and fold variable declarations within scopes, so that each variable has only one declaration per scope. Don’t touch functions.
+Useful to normalize code before analysis, like data-flow etc.
 
+
+## Usage
 
 ```sh
 npm install ast-redeclare
@@ -21,6 +24,16 @@ generate(ast);
 //var a, b, c, d; a = 1; b = 2; if (a > 1) { c = b; } else { c = 3; }; d = 4;
 
 ```
+
+## API
+
+#### redeclare(Node) → Node
+
+
+## Analogs
+
+* [ast-hoist](https://www.npmjs.com/package/ast-hoist)
+* [hoister](https://www.npmjs.com/package/hoister)
 
 
 [![NPM](https://nodei.co/npm/ast-redeclare.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ast-redeclare/)
