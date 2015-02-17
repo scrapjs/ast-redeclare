@@ -14,7 +14,6 @@ var redeclare = require('ast-redeclare');
 
 var ast = parse(
 	'var a = 1, b = 2; if (a > 1) { var c = b; } else {var c = 3;} var d = 4;'
-
 );
 ast = redeclare(ast);
 
