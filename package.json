@@ -1,7 +1,7 @@
 {
   "name": "ast-redeclare",
   "version": "1.0.2",
-  "description": "Fold variable declarations to the top of scope.",
+  "description": "Bring variables declarations to the top of scope.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -15,7 +15,9 @@
   },
   "keywords": [
     "ast",
+    "redeclare",
     "variables",
+    "declarations",
     "constants",
     "folding",
     "fold",
