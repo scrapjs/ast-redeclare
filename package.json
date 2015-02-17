@@ -1,6 +1,6 @@
 {
   "name": "ast-redeclare",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Hoist variable declarations to the top of scope.",
   "main": "index.js",
   "scripts": {
