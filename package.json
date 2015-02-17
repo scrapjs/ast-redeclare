@@ -1,12 +1,14 @@
 {
   "name": "ast-redeclare",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fold variable declarations to the top of scope.",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/dfcreative/ast-redeclare"
