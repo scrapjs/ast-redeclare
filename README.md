@@ -12,10 +12,13 @@ var parse = require('esprima').parse;
 var generate = require('escodegen').generate;
 var redeclare = require('ast-redeclare');
 
-var ast = parse('var a = 1; var b = 2; if (a > 1) { var c = b; } else {var c = 3;} var d = 4;');
-ast = redeclare(ast);
-generate(ast);
+var ast = parse(
+	'var a = 1, b = 2; if (a > 1) { var c = b; } else {var c = 3;} var d = 4;'
 
+);
+ast = redeclare(ast);
+
+generate(ast);
 //var a, b, c, d; a = 1; b = 2; if (a > 1) { c = b; } else { c = 3; }; d = 4;
 
 ```
