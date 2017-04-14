@@ -1,5 +1,7 @@
 # ast-redeclare [![Build Status](https://travis-ci.org/dfcreative/ast-redeclare.svg?branch=master)](https://travis-ci.org/dfcreative/ast-redeclare)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dfcreative/ast-redeclare.svg)](https://greenkeeper.io/)
+
 Hoist and fold variable declarations within scopes, so that each variable has only one declaration per scope. Don’t touch functions.
 Useful to normalize code before analysis, like data-flow etc.
 
